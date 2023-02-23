@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(0, 178, 188);
+        }
+
+        button {
+            padding: 10px 20px;
+            height: 50px;
+            width: auto;
+            border: none;
+            background-color: rgb(35, 31, 32);
+            color: white;
+            border-radius: 25px;
+            margin-top: 10px;
+            cursor: pointer;
+            display: flex;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            line-height: 30px;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Login Successful! </h1>
+    <h3>Thank You!</h3>
+
+    <script language="javascript" type="text/javascript">
+
+        sleep(2000).then(() => {
+            window.open('', '_parent', '');
+            window.close();
+        });
+
+    </script>
+</body>
+
+</html>
